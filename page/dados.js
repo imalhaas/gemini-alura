@@ -114,7 +114,7 @@ let exercicio = [
  {
     "exerciseName": "Remada Curvada com Barra",
     "bodyPart": "Costas",
-    "description": "Com as pernas levemente flexionadas e o tronco inclinado, puxe a barra em direção ao abdômen e esmague os musculos das costas.",
+    "description": "Com o tronco inclinado, puxe a barra em direção ao abdômen e esmague os musculos das costas.",
     "exerciseType": "Anaeróbico",
     "difficultyLevel": "Intermediário",
     "equipment": ["Barra"],
