@@ -1,0 +1,178 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+
+   
+    background-position: center;
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    text-align: center;
+    padding: 50px 20px;
+  
+   
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #00bbd45e;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+/* Estilo para a seção de pesquisa */
+.pesquisar {
+    margin: 30px auto;
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+    padding: 0px;
+    border-radius: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pesquisar input[type="text"] {
+    width: 80%;
+    max-width: 600px;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    color: #030202;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.pesquisar input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.5);
+    background-color: #fff;
+}
+
+.pesquisar button {
+    margin-top: 15px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background: #00bcd4;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pesquisar button:hover {
+    background: #0097a7;
+    box-shadow: 0 6px 16px rgba(0, 151, 167, 0.5);
+}
+
+/* Estilo para os resultados */
+.resultados-pesquisa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.exercicio-card {
+    background: rgba(66, 66, 66, 0.888);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exercicio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.exercicio-card h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #ee797995;
+}
+
+.exercicio-card p {
+    font-size: 0.9rem;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.exercicio-card p strong {
+    color: #00bcd4;
+}
+
+.exercicio-card a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.exercicio-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(125, 0, 0, 0.159);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .pesquisar {
+        width: 90%;
+        padding: 20px;
+    }
+}
